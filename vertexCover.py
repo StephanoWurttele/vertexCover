@@ -1,3 +1,4 @@
+# Non existent nodes in the tree are marked as -1.
 tree = [0,0,0,0,0,-1,0,-1,-1,0,0]
 sz = len(tree)
 iterations = 0
@@ -18,6 +19,7 @@ class Node:
         self.left = left
         self.val = 0
 
+#Uses tree represented by array
 def minVertexCover(index):
     global iterations
     iterations += 1
@@ -39,7 +41,7 @@ def minVertexCover(index):
         print("DP effect!")
     return tree[index]
 
-
+# Uses node structure that builds up for a tree
 def minVertexCoverNodes(root):
     global iterations
     iterations += 1

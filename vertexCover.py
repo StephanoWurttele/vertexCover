@@ -23,7 +23,7 @@ class Node:
 def minVertexCover(index):
     global iterations
     iterations += 1
-    if(notExists(index) or notExists(right(index)) or notExists(left(index))):
+    if(notExists(index) or (notExists(right(index)) and notExists(left(index)))):
         print("gonna return 0 on ", str(index))
         return 0
     print("Gonna work with " + str(index))
